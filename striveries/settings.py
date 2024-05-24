@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+NPM_BIN_PATH = '/usr/local/bin/npm'
+
 
 # Application definition
 
@@ -40,8 +42,15 @@ INSTALLED_APPS = [
     'main',
     'projects',
     'about',
-    'blog',
+    'blog',    
+    'tailwind',
+    'theme',
+    'django_browser_reload',
+
 ]
+
+TAILWIND_APP_NAME = 'theme'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -51,6 +60,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
+
 ]
 
 ROOT_URLCONF = 'striveries.urls'
@@ -120,6 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
