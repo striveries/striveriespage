@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog - Calista Sekar{% endblock %}
+
+{% block content %}
+<main class="p-10">
+    <section>
+        <h1 class="text-5xl font-bold">All Posts</h1>
+        <div class="mt-6">
+            <input type="text" placeholder="Search articles" class="p-3 border rounded-lg w-full md:w-1/2">
+        </div>
+        <div class="mt-10">
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <p class="text-gray-600">July 12, 2022 • ---- views</p>
+                <h3 class="text-2xl font-semibold mt-2">How to get the Spotify Refresh Token</h3>
+                <div class="flex mt-2">
+                    <span class="tag">SPOTIFY</span>
+                    <span class="tag">HACKS</span>
+                </div>
+                <p class="mt-2">Getting the Spotify Refresh Token doesn't need to be a hassle any longer.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <p class="text-gray-600">July 6, 2022 • ---- views</p>
+                <h3 class="text-2xl font-semibold mt-2">Apple doesn't care about privacy, and it's showing.</h3>
+                <div class="flex mt-2">
+                    <span class="tag">APPLE</span>
+                    <span class="tag">TECH</span>
+                    <span class="tag">PRIVACY</span>
+                </div>
+                <p class="mt-2">Apple announced that it would begin checking content uploaded to iCloud Photos, against a list of known CSAM material. This is fine on its own, however the system could easily be abused.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <p class="text-gray-600">June 5, 2022 • ---- views</p>
+                <h3 class="text-2xl font-semibold mt-2">WWDC 2022 Wishlist</h3>
+                <div class="flex mt-2">
+                    <span class="tag">TECH</span>
+                    <span class="tag">APPLE</span>
+                </div>
+                <p class="mt-2">Even though I don't use any of their products myself, here's the features I hope Apple will announce...</p>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

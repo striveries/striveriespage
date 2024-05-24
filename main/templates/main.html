@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Calista Sekar{% endblock %}
+
+{% block content %}
+
+<main class="p-10 text-center">
+        <section id="home">
+            <h1 class="text-5xl font-bold">Hi, I am <span class="highlight">Calista</span></h1>
+            <p class="mt-4 text-xl">Welcome to my personal blog where I share my musings. I am an aspiring software engineer passionate about learning new technologies.</p>
+            <p class="mt-4 text-xl">This is my place for <span class="highlight">thoughts, reflections & everything</span> in between. Have a good read!</p>
+        </section>
+        <section class="mt-10 flex justify-center space-x-4">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h2 class="text-2xl font-semibold">What I built</h2>
+                <a href="#projects" class="text-blue-500">Projects →</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h2 class="text-2xl font-semibold">Read my story</h2>
+                <a href="#about" class="text-blue-500">About →</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h2 class="text-2xl font-semibold">Hire me!</h2>
+                <a href="#contact" class="text-blue-500">Contact →</a>
+            </div>
+        </section>
+    <section id="blog" class="p-10 bg-gray-50">
+        <h2 class="text-3xl font-bold mb-4">Latest</h2>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <p class="text-gray-600">July 12, 2022 • ---- views</p>
+            <h3 class="text-2xl font-semibold mt-2">How to get the Spotify Refresh Token</h3>
+            <div class="flex mt-2">
+                <span class="tag">SPOTIFY</span>
+                <span class="tag">HACKS</span>
+            </div>
+            <p class="mt-2">Getting the Spotify Refresh Token doesn't need to be a hassle any longer.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <p class="text-gray-600">July 6, 2022 • ---- views</p>
+            <h3 class="text-2xl font-semibold mt-2">Apple doesn't care about privacy, and it's showing.</h3>
+            <div class="flex mt-2">
+                <span class="tag">APPLE</span>
+                <span class="tag">TECH</span>
+                <span class="tag">PRIVACY</span>
+            </div>
+            <p class="mt-2">Apple announced that it would begin checking content uploaded to iCloud Photos, against a list of known CSAM material. This is fine on its own, however the system could easily be abused.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <p class="text-gray-600">June 5, 2022 • ---- views</p>
+            <h3 class="text-2xl font-semibold mt-2">WWDC 2022 Wishlist</h3>
+            <div class="flex mt-2">
+                <span class="tag">TECH</span>
+                <span class="tag">APPLE</span>
+            </div>
+            <p class="mt-2">Even though I don't use any of their products myself, here's the features I hope Apple will announce...</p>
+        </div>
+    </section>
+</main>
+{% endblock %}

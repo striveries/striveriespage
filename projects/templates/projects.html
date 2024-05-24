@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects - Calista Sekar{% endblock %}
+
+{% block content %}
+<main class="p-10">
+    <section>
+        <h1 class="text-5xl font-bold">Projects</h1>
+        <p class="mt-4 text-xl">A list of projects I have been working on or built</p>
+        <hr class="my-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="project-card">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-2xl font-semibold">InstantMD</h2>
+                    <div>
+                        <a href="#" class="icon-link">🔗</a>
+                        <a href="#" class="icon-link">GitHub</a>
+                    </div>
+                </div>
+                <p class="mt-2">Instant MD is an Investigation, Medication and Chief complaint recognition application using Natural Language Processing. 🏆 Winner of the HealthCare Track at the MINeD Hackathon.</p>
+                <p class="mt-2 text-gray-600">Regex · Flask · Semantic UI</p>
+            </div>
+            <div class="project-card">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-2xl font-semibold">Car Price Predictor</h2>
+                    <div>
+                        <a href="#" class="icon-link">🔗</a>
+                        <a href="#" class="icon-link">GitHub</a>
+                    </div>
+                </div>
+                <p class="mt-2">The Car Price Predictor is a web application which predicts car prices based on given independent features like Car Name, Year, Selling Price, Present Price, Kms Driven, Fuel Type etc. It is made using Flask and deployed on Heroku.</p>
+                <p class="mt-2 text-gray-600">Scipy · Linear Regression · Javascript</p>
+            </div>
+            <div class="project-card">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-2xl font-semibold">Stock Portfolio Management</h2>
+                    <div>
+                        <a href="#" class="icon-link">🔗</a>
+                        <a href="#" class="icon-link">GitHub</a>
+                    </div>
+                </div>
+                <p class="mt-2">A web application to manage stock portfolios with features for tracking, analyzing, and predicting stock prices. Built using React and Django.</p>
+                <p class="mt-2 text-gray-600">React · Django · Tailwind CSS</p>
+            </div>
+            <div class="project-card">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-2xl font-semibold">Sentiment Analysis</h2>
+                    <div>
+                        <a href="#" class="icon-link">🔗</a>
+                        <a href="#" class="icon-link">GitHub</a>
+                    </div>
+                </div>
+                <p class="mt-2">A machine learning model to analyze and predict sentiments from textual data. Developed using Python and deployed using Flask.</p>
+                <p class="mt-2 text-gray-600">Python · Flask · Machine Learning</p>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

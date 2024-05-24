@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Calista Sekar's Personal Webpage{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .highlight {
+            background-color: #ff0080;
+            color: white;
+            padding: 0.2em 0.4em;
+            border-radius: 0.2em;
+        }
+        .icon-button {
+            background-color: #f5f5f5;
+            padding: 0.5em;
+            border-radius: 0.5em;
+            transition: background-color 0.3s ease;
+        }
+        .icon-button:hover {
+            background-color: #e0e0e0;
+        }
+        .tag {
+            background-color: #ff0080;
+            color: white;
+            padding: 0.2em 0.5em;
+            border-radius: 0.2em;
+            margin-right: 0.5em;
+        }
+        .icon-link {
+            color: #ff0080;
+            margin-left: 0.5em;
+        }
+        .project-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="flex justify-between items-center p-6 bg-white shadow-md">
+        <span class="text-3xl font-bold">~/</span>
+        <nav class="flex space-x-4">
+            <a href="/" class="text-lg">Home</a>
+            <a href="/blog" class="text-lg">Blog</a>
+            <a href="/projects" class="text-lg">Projects</a>
+            <a href="/about" class="text-lg">About</a>
+        </nav>
+        <div class="flex space-x-2">
+            <button class="icon-button">⌘</button>
+            <button class="icon-button">☰</button>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+    <footer class="bg-gray-200 text-center p-4">
+        <p>&copy; 2024 Calista Sekar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
