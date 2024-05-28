@@ -1,5 +1,4 @@
 {% load static %}
-{% load tailwind_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,8 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Calista Sekar's Personal Webpage{% endblock %}</title>
-    {% tailwind_css %}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
         .highlight {
             background-color: #ff0080;
             color: white;
@@ -45,30 +48,27 @@
         .project-card:hover {
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
-
     </style>
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-
-
 </head>
 <body class="bg-gray-100 text-gray-800">
-    <header class="flex justify-between items-center p-6 bg-white shadow-md">
-        <span class="text-3xl font-bold">~/</span>
-        <nav class="flex space-x-4">
-            <a href="/" class="text-lg">Home</a>
-            <a href="/blog" class="text-lg">Blog</a>
-            <a href="/projects" class="text-lg">Projects</a>
-            <a href="/about" class="text-lg">About</a>
-            <a href="/contact" class="text-lg">Contact</a>
-        </nav>
-        <div class="flex space-x-2">
-            <button class="icon-button">⌘</button>
-            <button class="icon-button">☰</button>
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-3xl font-bold">Calista</a>
+            <nav class="space-x-4">
+                <a href="/" class="text-lg">Home</a>
+                <a href="/blog" class="text-lg">Blog</a>
+                <a href="/projects" class="text-lg">Projects</a>
+                <a href="/about" class="text-lg">About</a>
+                <a href="/contact" class="text-lg">Contact</a>
+            </nav>
+            <div class="space-x-4">
+                <button class="icon-button">⌘</button>
+                <button class="icon-button">☰</button>
+            </div>
         </div>
     </header>
     {% block content %}{% endblock %}
-    <footer class="bg-gray-200 text-center p-4">
+    <footer class="bg-gray-200 text-center p-4 mt-10">
         <p>&copy; 2024 Calista Sekar. All rights reserved.</p>
     </footer>
 </body>
